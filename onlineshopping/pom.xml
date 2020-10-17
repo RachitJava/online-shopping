@@ -41,6 +41,15 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		
+		
+		<!-- Linking Backend Project -->
+		
+		<dependency>
+			<groupId>net.kzn</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 
 		<dependency>
@@ -50,7 +59,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<build>
+	 <build>
 
 		<plugins>
 			<plugin>
@@ -58,12 +67,12 @@
 				<version>3.1</version>
 
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 
 			</plugin>
 		</plugins>
 		<finalName>onlineshopping</finalName>
-	</build>
+	</build> 
 </project>
