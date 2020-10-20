@@ -15,13 +15,13 @@
 	</properties>
 
 	<dependencies>
-        
-        <!-- JSTL- JSP STANDARD TAG LIBRARY -->
+
+		<!-- JSTL- JSP STANDARD TAG LIBRARY -->
 
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
-			<version>1.2</version>			
+			<version>1.2</version>
 		</dependency>
 
 		<!-- JAVA EE API -->
@@ -35,16 +35,24 @@
 
 
 		<!-- SPRING WEB MVC API -->
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
-		
+        
+        <!-- SPRING CONTEXT -->
+        
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+
 		<!-- Linking Backend Project -->
-		
+
 		<dependency>
 			<groupId>net.kzn</groupId>
 			<artifactId>shoppingbackend</artifactId>
@@ -59,7 +67,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	 <build>
+	<build>
 
 		<plugins>
 			<plugin>
@@ -74,5 +82,5 @@
 			</plugin>
 		</plugins>
 		<finalName>onlineshopping</finalName>
-	</build> 
+	</build>
 </project>

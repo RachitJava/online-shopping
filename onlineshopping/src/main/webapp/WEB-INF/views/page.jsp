@@ -35,6 +35,11 @@ window.menu='${title}';
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 
+<!-- Bootstrap Readable Theme -->
+
+<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
+
 <!-- Custom CSS -->
 
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -91,6 +96,14 @@ window.menu='${title}';
 			</c:if>
 
 			<!-- Contact Us Over -->
+			
+			<!-- Load when user clicks All Products or Category Products  -->
+			
+			
+			<c:if test="${userClickAllProducts==true or userClickCategoryProducts==true}">			
+            
+            <%@ include file="listProducts.jsp"%>
+			</c:if>
 
 			<!--/.container-->
 
