@@ -15,6 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<javaee.version>7.0</javaee.version>
 		<spring.version>4.3.6.RELEASE</spring.version>
+		<hibernate.version>5.2.7.Final</hibernate.version>
 	</properties>
 
 	<dependencies>
@@ -36,7 +37,46 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
+        
+         <!-- H2 Database -->
+        
+        <dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+			<version>1.4.193</version>			
+		</dependency>
+		
+		   <!-- HIBERNATE DEPENDENCY -->
+        
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		
+		  <!-- SPRING ORM DEPENDENCY -->
+		  <!-- Ya help karega kuch tasks perform karna ka liya -->
+		  <!-- 1. Datasource management -->
+		  <!-- 2. Transaction management -->
+        
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		
+		  <!-- Database Connection Pooling -->
+		  <!-- Database connection ko manage karna ka liya hum coding nhi karenga -->
+		  <!-- commons-dpcp2- Ya ek class hai jo huma help karte hai database connections ko manage karna ka liya -->
+		  
+        
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.1.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
